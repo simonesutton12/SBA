@@ -1,0 +1,133 @@
+
+
+.srisakdi-regular {
+  font-family: "Srisakdi", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.srisakdi-bold {
+  font-family: "Srisakdi", system-ui;
+  font-weight: 700;
+  font-style: normal;
+}
+
+/*  */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 30px;
+}
+p {
+  font-size: 32px;
+}
+#whoami {
+  text-align: center
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+h2 {
+  animation: fadeInUp 2s ease-out;
+}
+
+.card-body{
+  background-color: #b26d9c;
+}
+
+
+#faq {
+  width: 100px;
+  height: 50px;
+  font-weight: bold;
+  text-align: justify;
+  position: relative;
+  animation: mymove 5s;
+  animation-fill-mode: forwards;
+
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
